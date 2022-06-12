@@ -1,0 +1,105 @@
+/* 
+////// For this challenge ///////
+
+- All text is in the text.md file
+
+// Requirements
+1. Refer to the design specs for the
+   overall layout 
+2. The image should line up with
+   the sidebar in the section
+   below
+
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    width: 100%;
+}
+
+.col + .col {
+    margin-left: 30px;
+}
+
+.hero {
+    background-color: hsl(192 36% 21%);
+    color: hsl(0 0% 100%);
+    padding: 100px 0;
+}
+
+.hero__text { 
+    width: 62%;
+}
+
+.hero__text h1 {
+    margin-top: 0;
+  }
+
+.hero__img {
+    width: 32%;
+    align-self: flex-start;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase; 
+    font-weight: 900;
+    padding: .75em 2em;
+    border-radius: 100px;
+}
+
+.btn--hero {
+    color: hsl(192 36% 21%);
+    background-color: hsl(184 68% 54%);
+    margin-top: 2em;
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: .75; 
+}
+
+.content__main {
+    width: 62%;
+}
+
+.main__title {
+    color: hsl(184 71% 26%);
+}
+
+.content__side {
+    width: 32%;
+    background-color: hsl(184 71% 26%);
+    color: hsl(0 0% 100%);
+    text-align: center;
+    padding: 1em;
+}
+
+.side__item + .side__item{
+    margin-top: 3em;
+}
